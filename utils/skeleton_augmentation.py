@@ -18,7 +18,10 @@ class Compose(object):
 class ToTensor(object):
     def __call__(self, skeleton):
         if isinstance(skeleton, np.ndarray):
+            skeleton = np.asarray(skeleton)
             skeleton = torch.from_numpy(skeleton).float()
+        elif not torch.is_tensor(skeleton):
+            skeleton = torch.tensor(skeleton, dtype=torch.float32)
         return skeleton
 
 class Jitter(object):

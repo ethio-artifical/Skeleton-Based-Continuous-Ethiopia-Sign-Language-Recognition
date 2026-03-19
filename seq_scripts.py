@@ -94,6 +94,7 @@ def seq_eval(
                 writer.writerow([id, gloss])
         return csv_file
     else:
+        conv_ret_fusion, lstm_ret_fusion = 100.0, 100.0
         try:
             lstm_ret_fusion = evaluate(
                 prefix=work_dir,
@@ -115,9 +116,9 @@ def seq_eval(
                 python_evaluate=python_eval,
                 # triplet=True,
             )
-        except:
+        except Exception:
             print("Unexpected error:", sys.exc_info()[0])
-            lstm_ret = 100.0
+            conv_ret_fusion, lstm_ret_fusion = 100.0, 100.0
         finally:
             pass
         recoder.print_log(

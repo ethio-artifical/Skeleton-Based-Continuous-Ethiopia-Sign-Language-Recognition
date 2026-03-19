@@ -40,7 +40,7 @@ class BiLSTMLayer(nn.Module):
         """
         # (max_src_len, batch_size, D)
         self.rnn.flatten_parameters()
-        packed_emb = nn.utils.rnn.pack_padded_sequence(src_feats, src_lens, enforce_sorted=False)
+        packed_emb = nn.utils.rnn.pack_padded_sequence(src_feats, src_lens.cpu(), enforce_sorted=False)
 
         # rnn(gru) returns:
         # - packed_outputs: shape same as packed_emb
