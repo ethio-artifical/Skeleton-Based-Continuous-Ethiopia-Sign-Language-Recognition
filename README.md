@@ -1,6 +1,6 @@
-# A Closer Look at Skeleton-based Continuous Sign Language Recognition
+# Skeleton Based Continuous Ethiopia Sign Language Recognition
 
-🏆 Official repository for A Closer Look at Skeleton-based Continuous Sign Language Recognition, the winner (1st place) in both the [Signer-Independent](https://codalab.lisn.upsaclay.fr/competitions/22899) and [Unseen Sentences](https://codalab.lisn.upsaclay.fr/competitions/22900) tasks of the ICCV 2025 [SignEval 2025: The First Multimodal Sign Language Recognition Challenge](https://multimodal-sign-language-recognition.github.io/ICCV-2025/). This implementation is largely built upon [VAC](https://github.com/VIPL-SLP/VAC_CSLR) and [CoSign](https://openaccess.thecvf.com/content/ICCV2023/html/Jiao_CoSign_Exploring_Co-occurrence_Signals_in_Skeleton-based_Continuous_Sign_Language_Recognition_ICCV_2023_paper.html) frameworks.
+This project adapts the ICCV 2025 SignEval-winning skeleton-based continuous sign language recognition framework for **Ethiopia Sign Language**. The original implementation is based on [A Closer Look at Skeleton-based Continuous Sign Language Recognition](https://github.com/VIPL-SLP/MSLR_ICCV2025), which won 1st place in both the [Signer-Independent](https://codalab.lisn.upsaclay.fr/competitions/22899) and [Unseen Sentences](https://codalab.lisn.upsaclay.fr/competitions/22900) tasks of the ICCV 2025 [SignEval 2025](https://multimodal-sign-language-recognition.github.io/ICCV-2025/) challenge. This implementation is largely built upon [VAC](https://github.com/VIPL-SLP/VAC_CSLR) and [CoSign](https://openaccess.thecvf.com/content/ICCV2023/html/Jiao_CoSign_Exploring_Co-occurrence_Signals_in_Skeleton-based_Continuous_Sign_Language_Recognition_ICCV_2023_paper.html) frameworks.
 
 
 ## Prerequisites
