@@ -1,0 +1,6 @@
+# Optional deps for Pose86 extraction from CESLR RGB frames.
+# Uses MediaPipe Tasks HolisticLandmarker (mp.solutions was removed).
+opencv-python>=4.8,<4.12
+mediapipe>=0.10.14
+numpy>=1.23,<2.1
+tqdm>=4.65

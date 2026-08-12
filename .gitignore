@@ -178,3 +178,6 @@ tags
 
 # ruff
 .ruff_cache
+# MediaPipe models / local venv
+preprocess/ceslr/models/
+.venv/
