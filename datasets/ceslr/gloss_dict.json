@@ -1,0 +1,102 @@
+{
+    "id2gloss": {
+        "1": {
+            "gloss": "ሀኪም",
+            "frequency": 37
+        },
+        "2": {
+            "gloss": "በላ",
+            "frequency": 38
+        },
+        "3": {
+            "gloss": "በላሁ",
+            "frequency": 77
+        },
+        "4": {
+            "gloss": "በማር",
+            "frequency": 38
+        },
+        "5": {
+            "gloss": "ነው",
+            "frequency": 37
+        },
+        "6": {
+            "gloss": "አባቴ",
+            "frequency": 37
+        },
+        "7": {
+            "gloss": "እኔ",
+            "frequency": 77
+        },
+        "8": {
+            "gloss": "እንጀራ",
+            "frequency": 39
+        },
+        "9": {
+            "gloss": "ወንድሜ",
+            "frequency": 75
+        },
+        "10": {
+            "gloss": "ዘመድ",
+            "frequency": 37
+        },
+        "11": {
+            "gloss": "ይወዳል",
+            "frequency": 37
+        },
+        "12": {
+            "gloss": "ዳቦ",
+            "frequency": 76
+        }
+    },
+    "gloss2id": {
+        "ሀኪም": {
+            "index": 1,
+            "frequency": 37
+        },
+        "በላ": {
+            "index": 2,
+            "frequency": 38
+        },
+        "በላሁ": {
+            "index": 3,
+            "frequency": 77
+        },
+        "በማር": {
+            "index": 4,
+            "frequency": 38
+        },
+        "ነው": {
+            "index": 5,
+            "frequency": 37
+        },
+        "አባቴ": {
+            "index": 6,
+            "frequency": 37
+        },
+        "እኔ": {
+            "index": 7,
+            "frequency": 77
+        },
+        "እንጀራ": {
+            "index": 8,
+            "frequency": 39
+        },
+        "ወንድሜ": {
+            "index": 9,
+            "frequency": 75
+        },
+        "ዘመድ": {
+            "index": 10,
+            "frequency": 37
+        },
+        "ይወዳል": {
+            "index": 11,
+            "frequency": 37
+        },
+        "ዳቦ": {
+            "index": 12,
+            "frequency": 76
+        }
+    }
+}

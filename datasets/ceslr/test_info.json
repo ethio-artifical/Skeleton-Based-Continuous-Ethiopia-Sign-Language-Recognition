@@ -1,0 +1,202 @@
+[
+    {
+        "signer": "Signer19",
+        "video_id": "01day_2016_sentence_36",
+        "gloss_sequence": "አባቴ ዘመድ ይወዳል",
+        "sentence_id": "01day_2016_sentence_36",
+        "folder": "01day_2016_sentence_36/1/*.png",
+        "original_info": "01day_2016_sentence_36|አባቴ ዘመድ ይወዳል|Signer19"
+    },
+    {
+        "signer": "Signer19",
+        "video_id": "01day_2016_sentence_37",
+        "gloss_sequence": "አባቴ ዘመድ ይወዳል",
+        "sentence_id": "01day_2016_sentence_37",
+        "folder": "01day_2016_sentence_37/1/*.png",
+        "original_info": "01day_2016_sentence_37|አባቴ ዘመድ ይወዳል|Signer19"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "01day_2016_sentence_38",
+        "gloss_sequence": "አባቴ ዘመድ ይወዳል",
+        "sentence_id": "01day_2016_sentence_38",
+        "folder": "01day_2016_sentence_38/1/*.png",
+        "original_info": "01day_2016_sentence_38|አባቴ ዘመድ ይወዳል|Signer21"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "01day_2016_sentence_39",
+        "gloss_sequence": "አባቴ ዘመድ ይወዳል",
+        "sentence_id": "01day_2016_sentence_39",
+        "folder": "01day_2016_sentence_39/1/*.png",
+        "original_info": "01day_2016_sentence_39|አባቴ ዘመድ ይወዳል|Signer21"
+    },
+    {
+        "signer": "Signer22",
+        "video_id": "01day_2016_sentence_40",
+        "gloss_sequence": "አባቴ ዘመድ ይወዳል",
+        "sentence_id": "01day_2016_sentence_40",
+        "folder": "01day_2016_sentence_40/1/*.png",
+        "original_info": "01day_2016_sentence_40|አባቴ ዘመድ ይወዳል|Signer22"
+    },
+    {
+        "signer": "Signer20",
+        "video_id": "02day_2016_sentence-39",
+        "gloss_sequence": "እኔ እንጀራ በላሁ",
+        "sentence_id": "02day_2016_sentence-39",
+        "folder": "02day_2016_sentence-39/1/*.png",
+        "original_info": "02day_2016_sentence-39|እኔ እንጀራ በላሁ|Signer20"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "02day_2016_sentence-40",
+        "gloss_sequence": "እኔ እንጀራ በላሁ",
+        "sentence_id": "02day_2016_sentence-40",
+        "folder": "02day_2016_sentence-40/1/*.png",
+        "original_info": "02day_2016_sentence-40|እኔ እንጀራ በላሁ|Signer21"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "02day_2016_sentence-41",
+        "gloss_sequence": "እኔ እንጀራ በላሁ",
+        "sentence_id": "02day_2016_sentence-41",
+        "folder": "02day_2016_sentence-41/1/*.png",
+        "original_info": "02day_2016_sentence-41|እኔ እንጀራ በላሁ|Signer21"
+    },
+    {
+        "signer": "Signer22",
+        "video_id": "02day_2016_sentence-42",
+        "gloss_sequence": "እኔ እንጀራ በላሁ",
+        "sentence_id": "02day_2016_sentence-42",
+        "folder": "02day_2016_sentence-42/1/*.png",
+        "original_info": "02day_2016_sentence-42|እኔ እንጀራ በላሁ|Signer22"
+    },
+    {
+        "signer": "Signer22",
+        "video_id": "02day_2016_sentence-43",
+        "gloss_sequence": "እኔ እንጀራ በላሁ",
+        "sentence_id": "02day_2016_sentence-43",
+        "folder": "02day_2016_sentence-43/1/*.png",
+        "original_info": "02day_2016_sentence-43|እኔ እንጀራ በላሁ|Signer22"
+    },
+    {
+        "signer": "Signer20",
+        "video_id": "03day_2016_sentence-38",
+        "gloss_sequence": "እኔ ዳቦ በላሁ",
+        "sentence_id": "03day_2016_sentence-38",
+        "folder": "03day_2016_sentence-38/1/*.png",
+        "original_info": "03day_2016_sentence-38|እኔ ዳቦ በላሁ|Signer20"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "03day_2016_sentence-39",
+        "gloss_sequence": "እኔ ዳቦ በላሁ",
+        "sentence_id": "03day_2016_sentence-39",
+        "folder": "03day_2016_sentence-39/1/*.png",
+        "original_info": "03day_2016_sentence-39|እኔ ዳቦ በላሁ|Signer21"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "03day_2016_sentence-40",
+        "gloss_sequence": "እኔ ዳቦ በላሁ",
+        "sentence_id": "03day_2016_sentence-40",
+        "folder": "03day_2016_sentence-40/1/*.png",
+        "original_info": "03day_2016_sentence-40|እኔ ዳቦ በላሁ|Signer21"
+    },
+    {
+        "signer": "Signer22",
+        "video_id": "03day_2016_sentence-41",
+        "gloss_sequence": "እኔ ዳቦ በላሁ",
+        "sentence_id": "03day_2016_sentence-41",
+        "folder": "03day_2016_sentence-41/1/*.png",
+        "original_info": "03day_2016_sentence-41|እኔ ዳቦ በላሁ|Signer22"
+    },
+    {
+        "signer": "Signer22",
+        "video_id": "03day_2016_sentence-42",
+        "gloss_sequence": "እኔ ዳቦ በላሁ",
+        "sentence_id": "03day_2016_sentence-42",
+        "folder": "03day_2016_sentence-42/1/*.png",
+        "original_info": "03day_2016_sentence-42|እኔ ዳቦ በላሁ|Signer22"
+    },
+    {
+        "signer": "Signer20",
+        "video_id": "04day_2016_sentence-38",
+        "gloss_sequence": "ወንድሜ ዳቦ በማር በላ",
+        "sentence_id": "04day_2016_sentence-38",
+        "folder": "04day_2016_sentence-38/1/*.png",
+        "original_info": "04day_2016_sentence-38|ወንድሜ ዳቦ በማር በላ|Signer20"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "04day_2016_sentence-39",
+        "gloss_sequence": "ወንድሜ ዳቦ በማር በላ",
+        "sentence_id": "04day_2016_sentence-39",
+        "folder": "04day_2016_sentence-39/1/*.png",
+        "original_info": "04day_2016_sentence-39|ወንድሜ ዳቦ በማር በላ|Signer21"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "04day_2016_sentence-40",
+        "gloss_sequence": "ወንድሜ ዳቦ በማር በላ",
+        "sentence_id": "04day_2016_sentence-40",
+        "folder": "04day_2016_sentence-40/1/*.png",
+        "original_info": "04day_2016_sentence-40|ወንድሜ ዳቦ በማር በላ|Signer21"
+    },
+    {
+        "signer": "Signer22",
+        "video_id": "04day_2016_sentence-41",
+        "gloss_sequence": "ወንድሜ ዳቦ በማር በላ",
+        "sentence_id": "04day_2016_sentence-41",
+        "folder": "04day_2016_sentence-41/1/*.png",
+        "original_info": "04day_2016_sentence-41|ወንድሜ ዳቦ በማር በላ|Signer22"
+    },
+    {
+        "signer": "Signer22",
+        "video_id": "04day_2016_sentence-42",
+        "gloss_sequence": "ወንድሜ ዳቦ በማር በላ",
+        "sentence_id": "04day_2016_sentence-42",
+        "folder": "04day_2016_sentence-42/1/*.png",
+        "original_info": "04day_2016_sentence-42|ወንድሜ ዳቦ በማር በላ|Signer22"
+    },
+    {
+        "signer": "Signer20",
+        "video_id": "05day_2016_sentence-37",
+        "gloss_sequence": "ወንድሜ ሀኪም ነው",
+        "sentence_id": "05day_2016_sentence-37",
+        "folder": "05day_2016_sentence-37/1/*.png",
+        "original_info": "05day_2016_sentence-37|ወንድሜ ሀኪም ነው|Signer20"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "05day_2016_sentence-38",
+        "gloss_sequence": "ወንድሜ ሀኪም ነው",
+        "sentence_id": "05day_2016_sentence-38",
+        "folder": "05day_2016_sentence-38/1/*.png",
+        "original_info": "05day_2016_sentence-38|ወንድሜ ሀኪም ነው|Signer21"
+    },
+    {
+        "signer": "Signer21",
+        "video_id": "05day_2016_sentence-39",
+        "gloss_sequence": "ወንድሜ ሀኪም ነው",
+        "sentence_id": "05day_2016_sentence-39",
+        "folder": "05day_2016_sentence-39/1/*.png",
+        "original_info": "05day_2016_sentence-39|ወንድሜ ሀኪም ነው|Signer21"
+    },
+    {
+        "signer": "Signer22",
+        "video_id": "05day_2016_sentence-40",
+        "gloss_sequence": "ወንድሜ ሀኪም ነው",
+        "sentence_id": "05day_2016_sentence-40",
+        "folder": "05day_2016_sentence-40/1/*.png",
+        "original_info": "05day_2016_sentence-40|ወንድሜ ሀኪም ነው|Signer22"
+    },
+    {
+        "signer": "Signer22",
+        "video_id": "05day_2016_sentence-41",
+        "gloss_sequence": "ወንድሜ ሀኪም ነው",
+        "sentence_id": "05day_2016_sentence-41",
+        "folder": "05day_2016_sentence-41/1/*.png",
+        "original_info": "05day_2016_sentence-41|ወንድሜ ሀኪም ነው|Signer22"
+    }
+]
