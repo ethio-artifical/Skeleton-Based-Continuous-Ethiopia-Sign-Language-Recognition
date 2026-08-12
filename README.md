@@ -15,6 +15,37 @@ ln -s PATH_TO_KALDI/tools/sctk-2.4.10/bin/sclite ./software/sclite
 
 ## Setup Instructions
 
+### CESLR (Ethiopia Sign Language)
+
+1. **Place the dataset** in `./datasets/CESLR-multisigner` (annotations + RGB frames).
+
+2. **Extract Pose86 keypoints** (MediaPipe Holistic, 86 joints per frame):
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r preprocess/ceslr/requirements-pose.txt
+
+python preprocess/ceslr/extract_pose86.py \
+  --dataset-root ./datasets/CESLR-multisigner \
+  --output ./datasets/pose_data_ceslr_hands_lips_body.pkl
+```
+
+3. **Preprocess annotations** (gloss dict, split info, evaluation STM files):
+
+```
+cd ./preprocess/ceslr
+python ceslr_process.py
+```
+
+4. **Train** on CESLR:
+
+```
+python main.py --config ./configs/Double_Cosign_ceslr.yaml
+```
+
+### MSLR / Isharah (original competition baseline)
+
 1. **Download the dataset** [[download link]](https://www.kaggle.com/competitions/continuous-sign-language-recognition-iccv-2025/data) and place the dataset in the `./datasets` folder.
 
 2. **Download the annotation** [[download link]](https://github.com/gufranSabri/Pose86K-CSLR-Isharah/tree/main/annotations_v2) and place them in the `./preprocess/mslr2025` folder.

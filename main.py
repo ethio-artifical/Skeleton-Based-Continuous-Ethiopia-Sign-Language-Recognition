@@ -37,7 +37,7 @@ class SLRProcessor(object):
             self.gloss_dict = json.load(f)
         self.model, self.optimizer = self.loading()
         self.best_dev_wer = 1000
-        self.tasks = self.arg.dataset[-2:]
+        self.tasks = getattr(self.arg, "task", None) or self.arg.dataset[-2:]
     
     def save_arg(self):
         arg_dict = vars(self.arg)
@@ -63,7 +63,8 @@ class SLRProcessor(object):
     
     def model_to_device(self, model):
         model = model.to(self.device.output_device)
-        model.cuda()
+        if self.device.output_device != "cpu":
+            model.cuda()
         return model
 
     def load_model_weights(self, model, weight_path):

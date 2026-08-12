@@ -11,12 +11,15 @@ class GpuDataParallel(object):
 
     def set_device(self, device):
         device = str(device)
-        if device != 'None':
-            self.gpu_list = [i for i in range(len(device.split(',')))]
+        if device != "None" and torch.cuda.is_available():
+            self.gpu_list = [i for i in range(len(device.split(",")))]
             os.environ["CUDA_VISIBLE_DEVICES"] = device
             output_device = self.gpu_list[0]
             self.occupy_gpu(self.gpu_list)
-        self.output_device = output_device if len(self.gpu_list) > 0 else "cpu"
+        else:
+            self.gpu_list = []
+            output_device = "cpu"
+        self.output_device = output_device
 
     def model_to_device(self, model):
         # model = convert_model(model)

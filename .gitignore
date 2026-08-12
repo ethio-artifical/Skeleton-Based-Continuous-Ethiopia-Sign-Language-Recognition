@@ -6,8 +6,9 @@ RGBFEAT
 INSTR
 work_dir/
 software/
-datasets/*.pkl
 datasets/CESLR-multisigner/
+datasets/*.pkl
+!datasets/pose_data_ceslr_hands_lips_body.pkl
 .history/
 *.pt
 

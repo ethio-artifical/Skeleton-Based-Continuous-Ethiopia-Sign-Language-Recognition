@@ -79,6 +79,10 @@ def get_parser():
         help='data loader will be used'
     )
     parser.add_argument(
+        '--task',
+        default=None,
+        help='evaluation task tag (si/us); defaults to last 2 chars of dataset name')
+    parser.add_argument(
         '--num-worker',
         type=int,
         default=4,

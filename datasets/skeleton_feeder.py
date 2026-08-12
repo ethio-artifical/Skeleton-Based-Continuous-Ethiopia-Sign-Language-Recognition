@@ -40,30 +40,31 @@ class SkeletonFeeder(data.Dataset):
         self.transform_mode = "train" if transform_mode else "test"
         self.dataset = dataset
         self.used_part = used_part
-        if mode == 'test':
-            with open(f"./datasets/pose_data_isharah1000_{self.setting.upper()}_test.pkl", "rb") as f:
+        self._paths = self._resolve_dataset_paths()
+
+        if mode == "test" and not self._paths["use_ceslr_layout"]:
+            with open(self._paths["test_pkl"], "rb") as f:
                 # test data
                 self.kps_global = pickle.load(f)
-                self.inputs_list = list(range(1, len(self.kps_global)+2))
+                self.inputs_list = list(range(1, len(self.kps_global) + 2))
         else:
             if len(self.mode_list) == 2:
                 inputs_list = []
                 for mode_type in self.mode_list:
-                    with open(f"./datasets/mslr2025/{self.setting}_{mode_type}_info.json", 'r') as f:
-                        # dataset info
+                    with open(
+                        self._paths["info_json"].format(mode=mode_type), "r"
+                    ) as f:
                         inputs_list_temp = json.load(f)
                         inputs_list.extend(inputs_list_temp)
             else:
-                with open(f"./datasets/mslr2025/{self.setting}_{mode}_info.json", 'r') as f:
-                    # dataset info
+                with open(self._paths["info_json"].format(mode=mode), "r") as f:
                     inputs_list = json.load(f)
-            with open("./datasets/pose_data_isharah1000_hands_lips_body_May12.pkl", "rb") as f:
-                # all data
+            with open(self._paths["pose_pkl"], "rb") as f:
                 self.kps_global = pickle.load(f)
 
             self.inputs_list = list()
             for item in inputs_list:
-                if item['video_id'] in self.kps_global.keys():
+                if item["video_id"] in self.kps_global.keys():
                     self.inputs_list.append(item)
                 else:
                     print(item)
@@ -86,6 +87,23 @@ class SkeletonFeeder(data.Dataset):
         if norm_point is None:
             print('no centeralization')
         self.data_aug = self.pose_transform()
+
+    def _resolve_dataset_paths(self):
+        if self.dataset.startswith("ceslr"):
+            return {
+                "use_ceslr_layout": True,
+                "info_json": "./datasets/ceslr/{mode}_info.json",
+                "pose_pkl": "./datasets/pose_data_ceslr_hands_lips_body.pkl",
+                "test_pkl": None,
+            }
+        return {
+            "use_ceslr_layout": False,
+            "info_json": "./datasets/mslr2025/{setting}_{mode}_info.json".format(
+                setting=self.setting, mode="{mode}"
+            ),
+            "pose_pkl": "./datasets/pose_data_isharah1000_hands_lips_body_May12.pkl",
+            "test_pkl": f"./datasets/pose_data_isharah1000_{self.setting.upper()}_test.pkl",
+        }
     
     def __getitem__(self, idx):
         if self.data_type == 'skeleton':
@@ -126,10 +144,10 @@ class SkeletonFeeder(data.Dataset):
 
     def read_pose(self, index, num_glosses=-1):
         # load file info
-        if self.mode == 'test':
-            pose_data = self.kps_global[self.inputs_list[index]]['keypoints']
+        if self.mode == "test" and not self._paths["use_ceslr_layout"]:
+            pose_data = self.kps_global[self.inputs_list[index]]["keypoints"]
             label_list = 1
-            fi = '[EMPTY]'
+            fi = "[EMPTY]"
         else:
             fi = self.inputs_list[index]
             pose_data = self.kps_global[fi['video_id']]['keypoints']

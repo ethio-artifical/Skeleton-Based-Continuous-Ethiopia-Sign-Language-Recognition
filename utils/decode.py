@@ -2,10 +2,15 @@ import os
 import pdb
 import time
 import torch
-import ctcdecode
 import numpy as np
 from itertools import groupby
 import torch.nn.functional as F
+
+try:
+    import ctcdecode
+    HAS_CTCDECODE = True
+except ImportError:
+    HAS_CTCDECODE = False
 
 
 class Decode(object):
@@ -13,11 +18,17 @@ class Decode(object):
         self.i2g_dict = {int(k): v['gloss'] for k, v in gloss_dict['id2gloss'].items()}
         self.g2i_dict = {k: int(v['index']) for k, v in gloss_dict['gloss2id'].items()}
         self.num_classes = num_classes
-        self.search_mode = search_mode
         self.blank_id = blank_id
-        vocab = [chr(x) for x in range(20000, 20000 + num_classes)]
-        self.ctc_decoder = ctcdecode.CTCBeamDecoder(vocab, beam_width=10, blank_id=blank_id,
-                                                    num_processes=10)
+        if search_mode == "beam" and not HAS_CTCDECODE:
+            print("ctcdecode not installed; falling back to greedy (max) decoding.")
+            search_mode = "max"
+        self.search_mode = search_mode
+        self.ctc_decoder = None
+        if self.search_mode == "beam":
+            vocab = [chr(x) for x in range(20000, 20000 + num_classes)]
+            self.ctc_decoder = ctcdecode.CTCBeamDecoder(
+                vocab, beam_width=10, blank_id=blank_id, num_processes=10
+            )
 
     def decode(self, nn_output, vid_lgt, batch_first=True, probs=False):
         if not batch_first:

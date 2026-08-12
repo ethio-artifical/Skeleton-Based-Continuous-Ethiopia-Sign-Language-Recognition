@@ -18,16 +18,17 @@ from pathlib import Path
 
 
 def parse_args():
+    repo_root = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(description="Preprocess CESLR annotations")
     parser.add_argument(
         "--dataset-root",
         type=Path,
-        default=Path("./datasets/CESLR-multisigner"),
+        default=repo_root / "datasets/CESLR-multisigner",
     )
     parser.add_argument(
         "--save-root",
         type=Path,
-        default=Path("./datasets/ceslr"),
+        default=repo_root / "datasets/ceslr",
     )
     parser.add_argument(
         "--splits",

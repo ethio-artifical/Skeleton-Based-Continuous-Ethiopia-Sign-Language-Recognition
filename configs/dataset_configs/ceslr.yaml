@@ -1,0 +1,5 @@
+dataset_root: ./datasets/CESLR-multisigner
+dict_path: ./datasets/ceslr/gloss_dict.json
+evaluation_dir: ./evaluation/slr_eval
+evaluation_prefix: ceslr-groundtruth
+pose_pkl: ./datasets/pose_data_ceslr_hands_lips_body.pkl
